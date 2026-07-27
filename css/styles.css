@@ -1,0 +1,93 @@
+/* Esto modifica el body */
+body {
+    background-color: #f0f0f0;
+    font-family: 'Edu VIC WA NT Hand';
+    padding: 25px;
+    margin: 0;
+}
+
+/* Esto modifica el color del h1 */
+h1 {
+    color: blue;
+}
+
+/* Esto alinea las cards */
+.servicios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Organiza las cards verticalmente y centra su contenido */
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+}
+
+/* ajusta los mosaicos con flex */
+.mosaico {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* ajusta el tamaño de las imágenes en el mosaico */
+.mosaico img {
+    width: 49%;
+    height: 250px;
+}
+
+/* ajusta el formulario */
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+/* ajusta el grupo de elementos del formulario */
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+/* ajusta el pie de página */
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* centra el parrafo del pie de página */
+.footer-info p {
+    text-align: center;
+}
+
+/* ajusta la lista del pie de página */
+.footer-info ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 10px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* Ajuste para adaptar a pantallas moviles */
+@media (max-width: 600px) {
+
+    /* Ajusta las imagenes del mosaico para moviles */
+    .mosaico img {
+        width: 100%;
+        height: auto;
+    }
+
+/* Ajusta las listas del footer para moviles */
+    .footer-info ul {
+        flex-direction: column;
+    }
+}
