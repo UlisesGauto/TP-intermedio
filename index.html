@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,49 +11,58 @@
 <script src="https://kit.fontawesome.com/6df76aa996.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header></header>
+    <header>
+        <nav>
+            <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#taller">Nuestro Taller</a></li>
+            <li><a href="#formulario">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
     <main>
-        <section>
-            <img src="assets/img/ejemplotaller2.png" alt="Ejemplo de Taller" width="100%" height="350px">
+        <section id="inicio">
+            <img class="hero-img" src="assets/img/ejemplotaller2.png" alt="Ejemplo de Taller">
             <h1> MotorTech Garage </h1>
             <a href="#formulario">QUIERO QUE ME CONTACTEN</a>
         
         </section>
 
-        <section class="servicios">
+        <section id="servicios" class="servicios">
 
             <article class="card">
                 <h3 class="img"> Mantenimiento preventivo</h3>
-                <img src="assets/img/Mantenimientopreventivo.jpg" alt="mantenimientopreventivo" width="100" height="100">
-                <p>En MotorTech Garage creemos que la mejor reparación es la que se evita. Nuestro servicio de mantenimiento preventivo incluy controles de los sistemas principales para garantizar el máximo rendimiento, seguridad y confiabilidad en cada kilómetro.</p>
+                <img class="card-img" src="assets/img/Mantenimientopreventivo.jpg" alt="Mantenimiento preventivo">
+                <p>En MotorTech Garage creemos que la mejor reparación es la que se evita. Nuestro servicio de mantenimiento preventivo incluye controles de los sistemas principales para garantizar el máximo rendimiento, seguridad y confiabilidad en cada kilómetro.</p>
                 <a href="#formulario">Agendar un turno</a>
             </article>
 
             <article class="card">
                 <h3 class="img"> Cambio de aceite y filtros</h3>
-                <img src="assets/img/Cambiodeaceiteyfiltros.jpg" alt="Cambiodeaceiteyfiltros" width="100" height="100">
+                <img class="card-img" src="assets/img/Cambiodeaceiteyfiltros.jpg" alt="Cambio de aceite y filtros">
                 <p>Un cambio de aceite a tiempo es clave para el buen funcionamiento del motor. En MotorTech Garage utilizamos lubricantes y filtros de primeras marcas, garantizando una protección superior, mayor eficiencia y el mejor rendimiento para que tu vehículo siga funcionando como el primer día.</p>
                 <a href="#formulario">Agendar un turno</a>
             </article>
 
             <article class="card">
                 <h3 class="img"> Reparación de frenos</h3>
-                <img src="assets/img/Reparaciondefrenos.jpg" alt="Reparaciondefrenos" width="100" height="100">
+                <img class="card-img" src="assets/img/Reparaciondefrenos.jpg" alt="Reparación de frenos">
                 <p>La seguridad comienza con un sistema de frenos en perfecto estado. En MotorTech Garage inspeccionamos, reparamos y reemplazamos pastillas, discos, campanas, cintas y líquido de frenos para garantizar una respuesta eficiente, brindándote mayor control y confianza en cada trayecto.</p>
                 <a href="#formulario">Agendar un turno</a>
             </article>
             
             <article class="card">
             <h3 class="img"> Alineación y balanceo</h3>
-            <img src="assets/img/Alineacionybalanceo.jpg" alt="Alineacionybalanceo" width="100" height="100">
-            <p>Mejorá la experiencia de conducción con nuestro servicio de alineación y balanceo. En MotorTech Garage corregimos la dirección y equilibramos las ruedas para lograr un manejo más suave, mayor estabilidad y un desgaste uniforme de los neumáticos, prolongando su vida útil y aumentando la seguridad en cada viaje.ta nota y crea la tuya!</p>
+            <img class="card-img" src="assets/img/Alineacionybalanceo.jpg" alt="Alineación y balanceo">
+            <p>Mejorá la experiencia de conducción con nuestro servicio de alineación y balanceo. En MotorTech Garage corregimos la dirección y equilibramos las ruedas para lograr un manejo más suave, mayor estabilidad y un desgaste uniforme de los neumáticos, prolongando su vida útil y aumentando la seguridad en cada viaje.</p>
             <a href="#formulario">Agendar un turno</a>
             </article>
           </section>
 
 
-        <section>
-        <h2> Nuestro Taller </h2>
+        <section id="taller">
+        <h2>Nuestro Taller</h2>
         <div class="mosaico">
         <img src="assets/img/imagen9.png" alt="imagen1">
         <img src="assets/img/imagen2.jpg" alt="imagen2">
@@ -68,7 +77,7 @@
         </section>
 
 
-        <section id="formulario" class="">
+        <section id="formulario" class="">00
             <h2>Opciones de contacto</h2>
             <form class="formulario" action="procesar_formulario.php" method="POST">
                 <div class="form-group">
@@ -78,7 +87,7 @@
 
                 <div class="form-group">
                     <label for="email">Email:</label>
-                    <input type="email" id="email" name="Correo" required>
+                    <input type="email" id="email" name="email" required>
                 </div>
 
                 <div class="form-group">
@@ -109,6 +118,7 @@
 
                 <button type="submit">Enviar   <i class="fa-solid fa-envelope"></i></button>
                 <button type="reset">Limpiar <i class="fa-solid fa-trash-can"></i></button>
+            </form>
         </section>
 
     </main>

@@ -11,12 +11,26 @@ h1 {
     color: blue;
 }
 
+/* Esto ajusta el tamaño de las imagenes de las cards */
+.card-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
 /* Esto alinea las cards */
 .servicios {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px;
+    gap: 20px;
+}
+
+/* Esto ajusta la imagen del hero */
+.hero-img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
 }
 
 /* Organiza las cards verticalmente y centra su contenido */
@@ -24,7 +38,21 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 200px;
+
+    width: 220px;
+    padding: 20px;
+
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    text-align: center;
+}
+
+.card p {
+    flex-grow: 1;
 }
 
 /* ajusta los mosaicos con flex */
@@ -32,12 +60,15 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+    justify-content: center;
 }
 
 /* ajusta el tamaño de las imágenes en el mosaico */
 .mosaico img {
-    width: 49%;
+    width: 48%;
     height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
 }
 
 /* ajusta el formulario */
