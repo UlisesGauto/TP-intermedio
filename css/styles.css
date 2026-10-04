@@ -1,124 +1,759 @@
-/* Esto modifica el body */
+/* ==================================================
+   CONFIGURACIÓN GENERAL
+================================================== */
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #f0f0f0;
-    font-family: 'Edu VIC WA NT Hand';
-    padding: 25px;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
 }
 
-/* Esto modifica el color del h1 */
-h1 {
-    color: blue;
+section {
+    scroll-margin-top: 20px;
 }
 
-/* Esto ajusta el tamaño de las imagenes de las cards */
-.card-img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
+
+/* ==================================================
+   TIPOGRAFÍA INDUSTRIAL
+================================================== */
+
+.logo,
+.nav-links,
+.hero-etiqueta,
+.hero h1,
+.hero-boton,
+.servicios-titulo p,
+.servicios-titulo h2,
+.card h3,
+.card a {
+    font-family: 'Oswald', sans-serif;
 }
 
-/* Esto alinea las cards */
+
+/* ==================================================
+   HEADER / NAVBAR
+================================================== */
+
+.header {
+    background-color: #161616;
+
+    padding: 0 30px;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    min-height: 70px;
+}
+
+.logo {
+    color: white;
+
+    font-size: 24px;
+    font-weight: bold;
+
+    text-decoration: none;
+}
+
+.logo span {
+    color: #ffc400;
+}
+
+.nav-links {
+    display: flex;
+
+    gap: 30px;
+
+    list-style: none;
+
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    color: white;
+
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #ffc400;
+}
+
+
+/* ==================================================
+   HERO
+================================================== */
+
+.hero {
+    min-height: 550px;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0, 0, 0, 0.9) 0%,
+            rgba(0, 0, 0, 0.65) 45%,
+            rgba(0, 0, 0, 0.2) 100%
+        ),
+        url("../assets/img/ejemplotaller2.png");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 7%;
+}
+
+.hero-contenido {
+    max-width: 650px;
+
+    color: white;
+}
+
+.hero-etiqueta {
+    color: #ffc400;
+
+    font-weight: bold;
+    letter-spacing: 4px;
+
+    margin-bottom: 10px;
+}
+
+.hero h1 {
+    margin: 0;
+
+    color: white;
+
+    font-size: 60px;
+    line-height: 1;
+}
+
+.hero h1 span {
+    color: #ffc400;
+}
+
+.hero-descripcion {
+    font-size: 20px;
+    line-height: 1.5;
+
+    max-width: 500px;
+
+    margin: 25px 0;
+}
+
+.hero-boton {
+    display: inline-block;
+
+    background-color: #ffc400;
+    color: #161616;
+
+    padding: 15px 25px;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.hero-boton:hover {
+    background-color: #e0ac00;
+
+    transform: translateY(-2px);
+}
+
+
+/* ==================================================
+   SERVICIOS
+================================================== */
+
 .servicios {
+    padding: 70px 7%;
+
+    background-color: #eeeeee;
+}
+
+.servicios-titulo {
+    text-align: center;
+
+    margin-bottom: 40px;
+}
+
+.servicios-titulo p {
+    color: #d9a600;
+
+    font-weight: bold;
+    letter-spacing: 3px;
+
+    margin-bottom: 5px;
+}
+
+.servicios-titulo h2 {
+    color: #161616;
+
+    font-size: 36px;
+
+    margin: 0 0 10px;
+}
+
+.servicios-titulo span {
+    color: #666;
+
+    font-size: 18px;
+}
+
+.servicios-contenedor {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+
     gap: 20px;
 }
 
-/* Esto ajusta la imagen del hero */
-.hero-img {
-    width: 100%;
-    height: 350px;
-    object-fit: cover;
-}
 
-/* Organiza las cards verticalmente y centra su contenido */
+/* ==================================================
+   CARDS
+================================================== */
+
 .card {
     display: flex;
     flex-direction: column;
-    align-items: center;
 
-    width: 220px;
-    padding: 20px;
+    width: 260px;
 
-    background-color: white;
-    border: 1px solid #ccc;
-    border-radius: 10px;
+    overflow: hidden;
 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
 
-    text-align: center;
+    border: none;
+    border-top: 4px solid #ffc400;
+    border-radius: 8px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+}
+
+.card-img {
+    width: 100%;
+    height: 170px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+.card h3 {
+    color: #161616;
+
+    font-size: 21px;
+
+    margin: 20px 20px 10px;
+
+    text-transform: uppercase;
 }
 
 .card p {
     flex-grow: 1;
+
+    color: #555;
+
+    line-height: 1.5;
+
+    margin: 0 20px 20px;
 }
 
-/* ajusta los mosaicos con flex */
+.card a {
+    background-color: #ffc400;
+    color: #161616;
+
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+
+    padding: 12px;
+    margin: 0 20px 20px;
+
+    border-radius: 6px;
+
+    transition: 0.3s;
+}
+
+.card a:hover {
+    background-color: #161616;
+    color: #ffc400;
+}
+
+
+/* ==================================================
+   NUESTRO TALLER
+================================================== */
+
+.taller {
+    background-color: #161616;
+
+    padding: 70px 7%;
+}
+
+.taller-titulo {
+    margin-bottom: 35px;
+}
+
+.taller-titulo p {
+    font-family: 'Oswald', sans-serif;
+
+    color: #ffc400;
+
+    font-weight: bold;
+    letter-spacing: 3px;
+
+    margin-bottom: 5px;
+}
+
+.taller-titulo h2 {
+    font-family: 'Oswald', sans-serif;
+
+    color: white;
+
+    font-size: 36px;
+
+    margin: 0 0 10px;
+}
+
+.taller-titulo span {
+    color: #aaa;
+
+    font-size: 18px;
+}
+
+
+/* ==================================================
+   GALERÍA
+================================================== */
+
 .mosaico {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 12px;
 }
 
-/* ajusta el tamaño de las imágenes en el mosaico */
 .mosaico img {
-    width: 48%;
-    height: 250px;
+    width: 100%;
+    height: 200px;
+
     object-fit: cover;
+
     border-radius: 8px;
+
+    transition: 0.3s;
 }
 
-/* ajusta el formulario */
+.mosaico img:hover {
+    transform: scale(1.02);
+}
+
+
+/* ==================================================
+   CONTACTO
+================================================== */
+
+.contacto {
+    background-color: #eeeeee;
+}
+
+.contacto-contenedor {
+    display: grid;
+
+    grid-template-columns: 2fr 1fr;
+}
+
+.contacto-form {
+    padding: 70px 8%;
+}
+
+.contacto-titulo {
+    margin-bottom: 30px;
+}
+
+.contacto-titulo > p {
+    font-family: 'Oswald', sans-serif;
+
+    color: #d9a600;
+
+    font-weight: bold;
+    letter-spacing: 3px;
+
+    margin-bottom: 5px;
+}
+
+.contacto-titulo h2 {
+    font-family: 'Oswald', sans-serif;
+
+    font-size: 36px;
+
+    color: #161616;
+
+    margin: 0 0 10px;
+}
+
+.contacto-titulo span {
+    color: #666;
+}
+
+
+/* ==================================================
+   FORMULARIO
+================================================== */
+
 .formulario {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    max-width: 400px;
-    margin: 0 auto;
+
+    gap: 15px;
 }
-/* ajusta el grupo de elementos del formulario */
+
 .form-group {
     display: flex;
     flex-direction: column;
+
+    gap: 5px;
 }
 
-/* ajusta el pie de página */
-.footer {
+.formulario input,
+.formulario select,
+.formulario textarea {
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #ccc;
+    border-radius: 6px;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+
+    box-sizing: border-box;
+}
+
+.formulario textarea {
+    min-height: 120px;
+
+    resize: vertical;
+}
+
+.formulario button {
+    padding: 13px;
+
+    border: none;
+    border-radius: 6px;
+
+    font-family: 'Oswald', sans-serif;
+
+    font-weight: bold;
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+.formulario button[type="submit"] {
+    background-color: #ffc400;
+
+    color: #161616;
+}
+
+.formulario button[type="reset"] {
+    background-color: #161616;
+
+    color: white;
+}
+
+.formulario button:hover {
+    opacity: 0.85;
+}
+
+
+/* ==================================================
+   INFORMACIÓN DE CONTACTO
+================================================== */
+
+.contacto-info {
+    background-color: #161616;
+
+    color: white;
+
+    padding: 70px 50px;
+
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
+
+    box-sizing: border-box;
 }
 
-/* centra el parrafo del pie de página */
-.footer-info p {
-    text-align: center;
+.contacto-etiqueta {
+    font-family: 'Oswald', sans-serif;
+
+    color: #ffc400;
+
+    letter-spacing: 2px;
+    font-weight: bold;
 }
 
-/* ajusta la lista del pie de página */
-.footer-info ul {
+.contacto-info h2 {
+    font-family: 'Oswald', sans-serif;
+
+    font-size: 32px;
+
+    margin: 5px 0 10px;
+}
+
+.contacto-info > p {
+    line-height: 1.5;
+}
+
+.info-item {
     display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    gap: 10px;
+    align-items: center;
+
+    gap: 15px;
+
+    margin-top: 20px;
+}
+
+.info-item i {
+    color: #ffc400;
+
+    font-size: 20px;
+}
+
+
+/* ==================================================
+   FOOTER
+================================================== */
+
+.footer {
+    background-color: #0d0d0d;
+
+    color: white;
+
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+
+    padding: 25px 7%;
 }
 
-/* Ajuste para adaptar a pantallas moviles */
+.footer-logo {
+    font-family: 'Oswald', sans-serif;
+
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.footer-logo span {
+    color: #ffc400;
+}
+
+.footer p {
+    color: #999;
+
+    font-size: 14px;
+}
+
+.footer-redes {
+    display: flex;
+
+    gap: 15px;
+}
+
+.footer-redes a {
+    color: white;
+
+    font-size: 20px;
+
+    transition: 0.3s;
+}
+
+.footer-redes a:hover {
+    color: #ffc400;
+}
+
+
+/* ==================================================
+   RESPONSIVE - CELULAR
+   IMPORTANTE: DEJAR SIEMPRE AL FINAL
+================================================== */
+
 @media (max-width: 600px) {
 
-    /* Ajusta las imagenes del mosaico para moviles */
-    .mosaico img {
-        width: 100%;
-        height: auto;
+    /* ---------- NAVBAR ---------- */
+
+    .header {
+        padding: 0 15px;
     }
 
-/* Ajusta las listas del footer para moviles */
-    .footer-info ul {
+    .navbar {
         flex-direction: column;
+        align-items: center;
+
+        padding: 12px 0;
+
+        gap: 10px;
     }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    .nav-links {
+        width: 100%;
+
+        justify-content: center;
+        flex-wrap: wrap;
+
+        gap: 10px 18px;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+    }
+
+
+    /* ---------- HERO ---------- */
+
+    .hero {
+        min-height: 500px;
+
+        padding: 0 25px;
+
+        background-position: center;
+    }
+
+    .hero-contenido {
+        width: 100%;
+    }
+
+    .hero-etiqueta {
+        font-size: 14px;
+        letter-spacing: 3px;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+    .hero-descripcion {
+        font-size: 17px;
+    }
+
+    .hero-boton {
+        padding: 13px 18px;
+
+        font-size: 14px;
+    }
+
+
+    /* ---------- SERVICIOS ---------- */
+
+    .servicios {
+        padding: 50px 20px;
+    }
+
+    .servicios-titulo h2 {
+        font-size: 30px;
+    }
+
+    .servicios-titulo span {
+        font-size: 16px;
+    }
+
+    .servicios-contenedor {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 330px;
+
+        box-sizing: border-box;
+    }
+
+
+    /* ---------- TALLER ---------- */
+
+    .taller {
+        padding: 50px 20px;
+    }
+
+    .taller-titulo h2 {
+        font-size: 30px;
+    }
+
+    .taller-titulo span {
+        font-size: 16px;
+    }
+
+    .mosaico {
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 10px;
+    }
+
+    .mosaico img {
+        width: 100%;
+        height: 130px;
+    }
+
+
+    /* ---------- CONTACTO ---------- */
+
+    .contacto-contenedor {
+        grid-template-columns: 1fr;
+    }
+
+    .contacto-form {
+        padding: 50px 25px;
+    }
+
+    .contacto-titulo h2 {
+        font-size: 30px;
+    }
+
+    .contacto-info {
+        padding: 50px 25px;
+    }
+
+    .info-item {
+        word-break: break-word;
+    }
+
+
+    /* ---------- FOOTER ---------- */
+
+    .footer {
+        flex-direction: column;
+
+        text-align: center;
+
+        gap: 15px;
+
+        padding: 25px 20px;
+    }
+
 }

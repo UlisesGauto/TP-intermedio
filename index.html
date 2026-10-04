@@ -1,139 +1,515 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MotorTech Garage</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Hand:wght@400..700&display=swap" rel="stylesheet">
-<script src="https://kit.fontawesome.com/6df76aa996.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>MotorTech Garage</title>
+
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Font Awesome -->
+  <script
+    src="https://kit.fontawesome.com/6df76aa996.js"
+    crossorigin="anonymous">
+  </script>
 </head>
+
+
 <body>
-    <header>
-        <nav>
-            <ul>
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#servicios">Servicios</a></li>
-            <li><a href="#taller">Nuestro Taller</a></li>
-            <li><a href="#formulario">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="inicio">
-            <img class="hero-img" src="assets/img/ejemplotaller2.png" alt="Ejemplo de Taller">
-            <h1> MotorTech Garage </h1>
-            <a href="#formulario">QUIERO QUE ME CONTACTEN</a>
-        
-        </section>
 
-        <section id="servicios" class="servicios">
+  <!-- ==================== NAVBAR ==================== -->
 
-            <article class="card">
-                <h3 class="img"> Mantenimiento preventivo</h3>
-                <img class="card-img" src="assets/img/Mantenimientopreventivo.jpg" alt="Mantenimiento preventivo">
-                <p>En MotorTech Garage creemos que la mejor reparación es la que se evita. Nuestro servicio de mantenimiento preventivo incluye controles de los sistemas principales para garantizar el máximo rendimiento, seguridad y confiabilidad en cada kilómetro.</p>
-                <a href="#formulario">Agendar un turno</a>
-            </article>
+  <header class="header">
 
-            <article class="card">
-                <h3 class="img"> Cambio de aceite y filtros</h3>
-                <img class="card-img" src="assets/img/Cambiodeaceiteyfiltros.jpg" alt="Cambio de aceite y filtros">
-                <p>Un cambio de aceite a tiempo es clave para el buen funcionamiento del motor. En MotorTech Garage utilizamos lubricantes y filtros de primeras marcas, garantizando una protección superior, mayor eficiencia y el mejor rendimiento para que tu vehículo siga funcionando como el primer día.</p>
-                <a href="#formulario">Agendar un turno</a>
-            </article>
+    <nav class="navbar">
 
-            <article class="card">
-                <h3 class="img"> Reparación de frenos</h3>
-                <img class="card-img" src="assets/img/Reparaciondefrenos.jpg" alt="Reparación de frenos">
-                <p>La seguridad comienza con un sistema de frenos en perfecto estado. En MotorTech Garage inspeccionamos, reparamos y reemplazamos pastillas, discos, campanas, cintas y líquido de frenos para garantizar una respuesta eficiente, brindándote mayor control y confianza en cada trayecto.</p>
-                <a href="#formulario">Agendar un turno</a>
-            </article>
-            
-            <article class="card">
-            <h3 class="img"> Alineación y balanceo</h3>
-            <img class="card-img" src="assets/img/Alineacionybalanceo.jpg" alt="Alineación y balanceo">
-            <p>Mejorá la experiencia de conducción con nuestro servicio de alineación y balanceo. En MotorTech Garage corregimos la dirección y equilibramos las ruedas para lograr un manejo más suave, mayor estabilidad y un desgaste uniforme de los neumáticos, prolongando su vida útil y aumentando la seguridad en cada viaje.</p>
-            <a href="#formulario">Agendar un turno</a>
-            </article>
-          </section>
+      <a href="#inicio" class="logo">
+        Motor<span>Tech</span> Garage
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#taller">Nuestro Taller</a></li>
+        <li><a href="#formulario">Contacto</a></li>
+      </ul>
+
+    </nav>
+
+  </header>
 
 
-        <section id="taller">
-        <h2>Nuestro Taller</h2>
-        <div class="mosaico">
-        <img src="assets/img/imagen9.png" alt="imagen1">
-        <img src="assets/img/imagen2.jpg" alt="imagen2">
-        <img src="assets/img/imagen3.jpg" alt="imagen3">
-        <img src="assets/img/imagen4.jpg" alt="imagen4">
-        <img src="assets/img/imagen5.jpg" alt="imagen5">
-        <img src="assets/img/imagen6.jpeg" alt="imagen6">
-        <img src="assets/img/imagen7.jpg" alt="imagen7">
-        <img src="assets/img/imagen1.jpg" alt="imagen9">
+  <main>
+
+    <!-- ==================== HERO ==================== -->
+
+    <section id="inicio" class="hero">
+
+      <div class="hero-contenido">
+
+        <p class="hero-etiqueta">
+          MECÁNICA INTEGRAL
+        </p>
+
+        <h1>
+          TU VEHÍCULO<br />
+          <span>EN BUENAS MANOS</span>
+        </h1>
+
+        <p class="hero-descripcion">
+          Diagnóstico preciso, servicio de calidad y la confianza
+          que tu auto necesita.
+        </p>
+
+        <a href="#formulario" class="hero-boton">
+          QUIERO QUE ME CONTACTEN
+        </a>
+
+      </div>
+
+    </section>
+
+
+    <!-- ==================== SERVICIOS ==================== -->
+
+    <section id="servicios" class="servicios">
+
+      <div class="servicios-titulo">
+
+        <p>LO QUE HACEMOS</p>
+
+        <h2>NUESTROS SERVICIOS</h2>
+
+        <span>
+          Todo lo que tu vehículo necesita, en un solo lugar.
+        </span>
+
+      </div>
+
+
+      <div class="servicios-contenedor">
+
+
+        <!-- Mantenimiento -->
+
+        <article class="card">
+
+          <img
+            class="card-img"
+            src="assets/img/Mantenimientopreventivo.jpg"
+            alt="Mantenimiento preventivo"
+          />
+
+          <h3>Mantenimiento preventivo</h3>
+
+          <p>
+            En MotorTech Garage creemos que la mejor reparación es la que se
+            evita. Nuestro servicio de mantenimiento preventivo incluye
+            controles de los sistemas principales para garantizar el máximo
+            rendimiento, seguridad y confiabilidad en cada kilómetro.
+          </p>
+
+          <a href="#formulario">
+            Agendar un turno
+          </a>
+
+        </article>
+
+
+        <!-- Aceite -->
+
+        <article class="card">
+
+          <img
+            class="card-img"
+            src="assets/img/Cambiodeaceiteyfiltros.jpg"
+            alt="Cambio de aceite y filtros"
+          />
+
+          <h3>Cambio de aceite y filtros</h3>
+
+          <p>
+            Un cambio de aceite a tiempo es clave para el buen funcionamiento
+            del motor. En MotorTech Garage utilizamos lubricantes y filtros de
+            primeras marcas, garantizando una protección superior, mayor
+            eficiencia y el mejor rendimiento para que tu vehículo siga
+            funcionando como el primer día.
+          </p>
+
+          <a href="#formulario">
+            Agendar un turno
+          </a>
+
+        </article>
+
+
+        <!-- Frenos -->
+
+        <article class="card">
+
+          <img
+            class="card-img"
+            src="assets/img/Reparaciondefrenos.jpg"
+            alt="Reparación de frenos"
+          />
+
+          <h3>Reparación de frenos</h3>
+
+          <p>
+            La seguridad comienza con un sistema de frenos en perfecto estado.
+            En MotorTech Garage inspeccionamos, reparamos y reemplazamos
+            pastillas, discos, campanas, cintas y líquido de frenos para
+            garantizar una respuesta eficiente, brindándote mayor control y
+            confianza en cada trayecto.
+          </p>
+
+          <a href="#formulario">
+            Agendar un turno
+          </a>
+
+        </article>
+
+
+        <!-- Alineación -->
+
+        <article class="card">
+
+          <img
+            class="card-img"
+            src="assets/img/Alineacionybalanceo.jpg"
+            alt="Alineación y balanceo"
+          />
+
+          <h3>Alineación y balanceo</h3>
+
+          <p>
+            Mejorá la experiencia de conducción con nuestro servicio de
+            alineación y balanceo. En MotorTech Garage corregimos la dirección
+            y equilibramos las ruedas para lograr un manejo más suave, mayor
+            estabilidad y un desgaste uniforme de los neumáticos, prolongando
+            su vida útil y aumentando la seguridad en cada viaje.
+          </p>
+
+          <a href="#formulario">
+            Agendar un turno
+          </a>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- ==================== NUESTRO TALLER ==================== -->
+
+    <section id="taller" class="taller">
+
+      <div class="taller-titulo">
+
+        <p>NUESTRO TALLER</p>
+
+        <h2>CONOCÉ NUESTRO ESPACIO</h2>
+
+        <span>
+          Equipamiento, herramientas y un espacio preparado para cuidar tu vehículo.
+        </span>
+
+      </div>
+
+
+      <div class="mosaico">
+
+        <img
+          src="assets/img/imagen9.png"
+          alt="Taller MotorTech"
+        />
+
+        <img
+          src="assets/img/imagen2.jpg"
+          alt="Taller MotorTech"
+        />
+
+        <img
+          src="assets/img/imagen3.jpg"
+          alt="Taller MotorTech"
+        />
+
+        <img
+          src="assets/img/imagen4.jpg"
+          alt="Taller MotorTech"
+        />
+
+        <img
+          src="assets/img/imagen5.jpg"
+          alt="Taller MotorTech"
+        />
+
+        <img
+          src="assets/img/imagen6.jpeg"
+          alt="Taller MotorTech"
+        />
+
+        <img
+          src="assets/img/imagen7.jpg"
+          alt="Taller MotorTech"
+        />
+
+        <img
+          src="assets/img/imagen1.jpg"
+          alt="Taller MotorTech"
+        />
+
+      </div>
+
+    </section>
+
+
+    <!-- ==================== CONTACTO ==================== -->
+
+    <section id="formulario" class="contacto">
+
+      <div class="contacto-contenedor">
+
+
+        <!-- Formulario -->
+
+        <div class="contacto-form">
+
+          <div class="contacto-titulo">
+
+            <p>CONTACTO</p>
+
+            <h2>OPCIONES DE CONTACTO</h2>
+
+            <span>
+              Contanos en qué podemos ayudarte y te responderemos
+              a la brevedad.
+            </span>
+
+          </div>
+
+
+          <form
+            class="formulario"
+            action="procesar_formulario.php"
+            method="POST"
+          >
+
+            <div class="form-group">
+
+              <label for="nombre">
+                Nombre
+              </label>
+
+              <input
+                type="text"
+                id="nombre"
+                name="nombre"
+                placeholder="Tu nombre"
+                required
+              />
+
+            </div>
+
+
+            <div class="form-group">
+
+              <label for="email">
+                Email
+              </label>
+
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="tu@email.com"
+                required
+              />
+
+            </div>
+
+
+            <div class="form-group">
+
+              <label for="telefono">
+                Teléfono
+              </label>
+
+              <input
+                type="tel"
+                id="telefono"
+                name="telefono"
+                placeholder="Tu teléfono"
+              />
+
+            </div>
+
+
+            <div class="form-group">
+
+              <label for="servicio">
+                Servicio
+              </label>
+
+              <select
+                id="servicio"
+                name="servicio"
+              >
+
+                <option value="">
+                  Seleccioná un servicio
+                </option>
+
+                <option value="mantenimiento">
+                  Mantenimiento preventivo
+                </option>
+
+                <option value="aceite">
+                  Cambio de aceite y filtros
+                </option>
+
+                <option value="frenos">
+                  Reparación de frenos
+                </option>
+
+                <option value="alineacion">
+                  Alineación y balanceo
+                </option>
+
+              </select>
+
+            </div>
+
+
+            <div class="form-group">
+
+              <label for="comentarios">
+                Comentarios
+              </label>
+
+              <textarea
+                id="comentarios"
+                name="comentarios"
+                placeholder="Contanos en qué podemos ayudarte"
+              ></textarea>
+
+            </div>
+
+
+            <button type="submit">
+              Enviar
+              <i class="fa-solid fa-envelope"></i>
+            </button>
+
+            <button type="reset">
+              Limpiar
+              <i class="fa-solid fa-trash-can"></i>
+            </button>
+
+          </form>
+
         </div>
-        
-        </section>
 
 
-        <section id="formulario" class="">00
-            <h2>Opciones de contacto</h2>
-            <form class="formulario" action="procesar_formulario.php" method="POST">
-                <div class="form-group">
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" required>
-                </div>
+        <!-- Información -->
 
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
+        <div class="contacto-info">
 
-                <div class="form-group">
-                    <label for="telefono">Teléfono:</label>
-                    <input type="tel" id="telefono" name="telefono">
-                </div>
+          <p class="contacto-etiqueta">
+            ESTAMOS PARA AYUDARTE
+          </p>
 
-                <div class="form-group">
-                    <label for="mensaje">Comentarios:</label>
-                    <textarea id="mensaje" name="mensaje" required></textarea>
-                </div>
+          <h2>
+            MOTORTECH GARAGE
+          </h2>
 
-                <div class="form-group">
-                    <label for="servicio">Servicio de interés:</label>
-                    <select id="servicio" name="servicio">
-                        <option value="">Quiero que me contacten</option>
-                        <option value="mantenimiento">Mantenimiento preventivo</option>
-                        <option value="cambio_aceite">Cambio de aceite y filtros</option>
-                        <option value="frenos">Reparación de frenos</option>
-                        <option value="alineacion">Alineación y balanceo</option>
-                    </select>
-                </div>
-                
-                <div class="form-group">
-                    <label for="acepto">Acepto recibir información y promociones de MotorTech Garage.</label>
-                    <input type="checkbox" id="acepto" name="acepto">
-                </div>
+          <p>
+            Tecnología y precisión para el cuidado de tu vehículo.
+          </p>
 
-                <button type="submit">Enviar   <i class="fa-solid fa-envelope"></i></button>
-                <button type="reset">Limpiar <i class="fa-solid fa-trash-can"></i></button>
-            </form>
-        </section>
 
-    </main>
-    <footer class="footer"> 
-        <h4>MOTORTECH GARAGE</h4>
-        <div class="footer-info">
+          <div class="info-item">
 
-            <p>Tecnología y precisión para el cuidado de tu vehículo.</p>
-            <ul>
-                <li>📍 Av. Siempre Viva 123 - Buenos Aires</li>
-                <li>📞 (11) 4567-8901</li>
-                <li>✉ contacto@motortechgarage.com</li>
-            </ul>
-        </div> 
- <p class="footer-derechos">©2026 MotorTech Garage. Todos los derechos reservados.</p>
-</footer>
+            <i class="fa-solid fa-location-dot"></i>
+
+            <span>
+              Buenos Aires, Argentina
+            </span>
+
+          </div>
+
+
+          <div class="info-item">
+
+            <i class="fa-solid fa-phone"></i>
+
+            <span>
+              (11) 4567-8901
+            </span>
+
+          </div>
+
+
+          <div class="info-item">
+
+            <i class="fa-solid fa-envelope"></i>
+
+            <span>
+              contacto@motortechgarage.com
+            </span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- ==================== FOOTER ==================== -->
+
+  <footer class="footer">
+
+    <div class="footer-logo">
+      Motor<span>Tech</span> Garage
+    </div>
+
+    <p>
+      © 2026 MotorTech Garage. Todos los derechos reservados.
+    </p>
+
+    <div class="footer-redes">
+
+      <a href="#" aria-label="Facebook">
+        <i class="fa-brands fa-facebook-f"></i>
+      </a>
+
+      <a href="#" aria-label="Instagram">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+
+      <a href="#" aria-label="WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
+
+    </div>
+
+  </footer>
+
 </body>
+
 </html>
